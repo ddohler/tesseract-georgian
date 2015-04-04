@@ -10,6 +10,7 @@
 - **kat.training_text**: A text to use with tesstrain.sh or text2image to generation training images for tesseract.
 - **font_properties**: A manually generated file containing the attributes of the fonts that I used to train tesseract, in tesseract's [font\_properties](https://code.google.com/p/tesseract-ocr/wiki/TrainingTesseract3) format
 - **count_stuff**: Folder of Python scripts for generating bigrams and wordlists
+- **README.md**: This README document
 
 ## Procedure
 Steps I took to generate the training files
@@ -77,7 +78,7 @@ The specific command executed to train tesseract was:
 (Yes, this was done on a Raspberry Pi.)
 
 ## Other notes
-The `count\_stuff.py` script can theoretically also generate files containing punctuation and
+The `count_stuff.py` script can theoretically also generate files containing punctuation and
 numeral patterns, which tesstrain.sh can use to create DAWG files for punctuation and numbers.
 However, I decided to forgo using these files in order to simplify the first pass at training, and
 the results ended up being good enough that I haven't seen the need to add the punctuation and
