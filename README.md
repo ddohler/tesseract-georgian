@@ -38,7 +38,7 @@ kawikitext.txt`
 
 4. Remove remaining <doc> tags with `sed -i '/^<doc/ d'` and `sed -i '/^<\/doc/ d'`
 
-5. Run `python count_stuff/word_counts.py --count-what [words|bigrams] --clean --no-counts
+5. Run `python count_stuff/wordcounts.py --count-what [words|bigrams] --clean --no-counts
 kawikitext.txt > [kat.wordlist.clean|kat.word.bigrams.clean.full]` to extract words and/or bigrams from
 the Wikipedia text
 
